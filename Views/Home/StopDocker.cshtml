@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "StopDocker";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>StopDocker</h1>
+<p>Enter name images</p>
+<form action="/Home/StopDocker" method="post">
+    <input type="text" id="name" name="name"><br><br>
+    <label for="Name">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="ram">Passwd:</label>
+    <input type="text" id="passwd" name="passwd"><br><br>
+    <input type="submit" value="Submit">
+    <br />
+    @ViewBag.MyMessage
+</form>

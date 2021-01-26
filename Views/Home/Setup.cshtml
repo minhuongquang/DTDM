@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Setup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Setup</h1>
+<p>Enter amount</p>
+<form action="/Home/Setup" method="post">
+    <label for="Name">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="ram">Passwd:</label>
+    <input type="text" id="passwd" name="passwd"><br><br>
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name"><br><br>
+    <label for="ram">Ram:</label>
+    <input type="text" id="ram" name="Ram"><br><br>
+    <label for="CPU">CPU:</label>
+    <input type="text" id="CPU" name="CPU"><br><br>
+    <input type="submit" value="Submit">
+    <br />
+    @ViewBag.MyMessage
+</form>
+
